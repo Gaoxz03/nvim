@@ -4,7 +4,7 @@ return{
 		config = function()
 			local lspconfig = require("lspconfig")
 			-- typescript
-			lspconfig["tsserver"].setup({})
+			lspconfig["ts_ls"].setup({})
 			-- lua
 			lspconfig["lua_ls"].setup({})
 			-- c & cpp
