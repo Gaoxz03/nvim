@@ -31,8 +31,8 @@ return{
 			lspconfig["taplo"].setup({})
 			-- matlab
 			lspconfig["matlab_ls"].setup({})
-			-- -- vhd
-			-- lspconfig["hdl_checker"].setup({})
+			--typst
+			lspconfig["tinymist"].setup({})
 		end
 	}
 }

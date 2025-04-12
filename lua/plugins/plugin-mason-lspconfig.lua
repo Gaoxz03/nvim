@@ -18,7 +18,7 @@ return{
                     "yamlls",
                     "taplo",
                     "matlab_ls",
-		    -- "hdl_checker"
+                    "tinymist",
                 },
             })
         end
