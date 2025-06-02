@@ -29,8 +29,6 @@ return{
 			lspconfig["yamlls"].setup({})
 			-- toml
 			lspconfig["taplo"].setup({})
-			-- matlab
-			lspconfig["matlab_ls"].setup({})
 			--typst
 			lspconfig["tinymist"].setup({})
 		end

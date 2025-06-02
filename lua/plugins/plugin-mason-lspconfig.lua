@@ -17,7 +17,6 @@ return{
                     "cssls",
                     "yamlls",
                     "taplo",
-                    "matlab_ls",
                     "tinymist",
                 },
             })
