@@ -18,6 +18,7 @@ return{
                     "yamlls",
                     "taplo",
                     "tinymist",
+                    "svls",
                 },
             })
         end

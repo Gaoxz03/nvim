@@ -31,6 +31,8 @@ return{
 			lspconfig["taplo"].setup({})
 			--typst
 			lspconfig["tinymist"].setup({})
+			--verilog
+			lspconfig["svls"].setup({})
 		end
 	}
 }
