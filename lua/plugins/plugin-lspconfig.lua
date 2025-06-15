@@ -33,6 +33,8 @@ return{
 			lspconfig["tinymist"].setup({})
 			--verilog
 			lspconfig["svls"].setup({})
+			--matlab
+			lspconfig["matlab_ls"].setup({})
 		end
 	}
 }

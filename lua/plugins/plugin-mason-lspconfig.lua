@@ -19,6 +19,7 @@ return{
                     "taplo",
                     "tinymist",
                     "svls",
+                    "matlab_ls",
                 },
             })
         end
