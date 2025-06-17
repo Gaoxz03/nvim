@@ -1,4 +1,5 @@
 return{
+	-- nvim-lspconfig
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
@@ -35,6 +36,49 @@ return{
 			lspconfig["svls"].setup({})
 			--matlab
 			lspconfig["matlab_ls"].setup({})
+		end
+	},
+
+	-- mason lspconfig
+	{
+		"williamboman/mason-lspconfig.nvim",
+		config = function()
+			require("mason-lspconfig").setup({
+				ensure_installed = {
+					"ts_ls",
+					"lua_ls",
+					"clangd",
+					"asm_lsp",
+					"cmake",
+					"rust_analyzer",
+					"pyright",
+					"marksman",
+					"jsonls",
+					"html",
+					"cssls",
+					"yamlls",
+					"taplo",
+					"tinymist",
+					"svls",
+					"matlab_ls",
+				},
+			})
+		end
+	},
+
+	-- mason which install the lsp
+	{
+		"williamboman/mason.nvim",
+		config = function()
+			require("mason").setup({
+				ui = {
+					icons = {
+						package_installed = "✓",
+						package_pending = "➜",
+						package_uninstalled = "✗",
+					},
+				},
+			})
 		end
 	}
 }

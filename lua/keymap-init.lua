@@ -22,8 +22,5 @@ vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>", opt)
 -- ctrl + f search
 vim.keymap.set("n", "<C-f>", "<cmd>Telescope current_buffer_fuzzy_find<CR>", opt)
 
--- ctrl + t open terminal
-vim.keymap.set("n", "<C-t>", ":ToggleTerm<CR>", opt)
-
 vim.keymap.set("n", "<C-A-S-Left>", ":NvimTreeResize -10<CR>", opt)
 vim.keymap.set("n", "<C-A-S-Right>", ":NvimTreeResize +10<CR>", opt)
