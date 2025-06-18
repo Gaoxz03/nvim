@@ -26,6 +26,26 @@ return {
       -- C-k: Toggle signature help (if signature.enabled = true)
       --
       -- See :h blink-cmp-config-keymap for defining your own keymap
+   		cmdline = {
+	  		keymap = {
+		  		-- 选择并接受预选择的第一个
+			  	["<CR>"] = { "select_and_accept", "fallback" },
+			  },
+			  completion = {
+				  -- 不预选第一个项目，选中后自动插入该项目文本
+			  	list = { selection = { preselect = false, auto_insert = false } },
+			  	-- 自动显示补全窗口，仅在输入命令时显示菜单，而搜索或使用其他输入菜单时则不显示
+			  	menu = {
+				  	auto_show = function(ctx)
+					  	return vim.fn.getcmdtype() == ":"
+						-- enable for inputs as well, with:
+						-- or vim.fn.getcmdtype() == '@'
+					  end,
+				  },
+				  -- 不在当前行上显示所选项目的预览
+				  ghost_text = { enabled = false },
+			  },
+		  },
       keymap = { 
         preset = 'none',
 
