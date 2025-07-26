@@ -1,14 +1,10 @@
 -- Plugin Telescope
-return{
-  {
+return {{
     'nvim-telescope/telescope.nvim',
     version = '*',
     lazy = false,
-    dependencies = {
-      'nvim-telescope/telescope.nvim'
-    },
+    dependencies = {'nvim-telescope/telescope.nvim'},
     config = function()
-      require('telescope').setup{}
-    end,
-  }
-}
+        require('telescope').setup {}
+    end
+}}

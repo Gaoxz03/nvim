@@ -1,12 +1,15 @@
 -- Ctrl + n open file tree
-vim.keymap.set("n","<C-n>", ":NvimTreeToggle<CR>",opt)
+vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>", opt)
 
 -- Ctrl + h, l change file
 vim.keymap.set("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
 vim.keymap.set("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
 
 -- Ctrl + F4 close tabs
-vim.keymap.set("n", "<C-F4>", ":BufferLinePickClose<CR>", {noremap = true, silent = true})
+vim.keymap.set("n", "<C-F4>", ":BufferLinePickClose<CR>", {
+    noremap = true,
+    silent = true
+})
 
 -- lsp keymap
 vim.keymap.set("n", "K", vim.lsp.buf.hover, {})
