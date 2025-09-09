@@ -1,10 +1,21 @@
 return { -- Theme Tokyo Night
+-- {
+--     "folke/tokyonight.nvim",
+--     lazy = false,
+--     priority = 1000,
+--     -- uncomment to enable
+--     config = function()
+--         vim.cmd([[colorscheme tokyonight-night]])
+--     end
+-- }, -- Theme catppuccin
 {
-    "folke/tokyonight.nvim",
-    lazy = false,
+    "catppuccin/nvim",
+    name = "catppuccin",
     priority = 1000,
+
+    -- comment to disable
     config = function()
-        vim.cmd([[colorscheme tokyonight-night]])
+        vim.cmd([[colorscheme catppuccin-mocha]])
     end
 }, -- nui for layout
 {
