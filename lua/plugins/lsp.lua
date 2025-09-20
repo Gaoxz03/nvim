@@ -1,42 +1,5 @@
 return { -- nvim-lspconfig
-{
-    "neovim/nvim-lspconfig",
-    config = function()
-        local lspconfig = require("lspconfig")
-        -- typescript
-        lspconfig["ts_ls"].setup({})
-        -- lua
-        lspconfig["lua_ls"].setup({})
-        -- c & cpp
-        lspconfig["clangd"].setup({})
-        -- assembly
-        lspconfig["asm_lsp"].setup({})
-        -- cmake
-        lspconfig["cmake"].setup({})
-        -- rust
-        lspconfig["rust_analyzer"].setup({})
-        -- python
-        lspconfig["pyright"].setup({})
-        -- markdown
-        lspconfig["marksman"].setup({})
-        -- json
-        lspconfig["jsonls"].setup({})
-        -- html
-        lspconfig["html"].setup({})
-        -- css
-        lspconfig["cssls"].setup({})
-        -- yaml
-        lspconfig["yamlls"].setup({})
-        -- toml
-        lspconfig["taplo"].setup({})
-        -- typst
-        lspconfig["tinymist"].setup({})
-        -- verilog
-        lspconfig["svls"].setup({})
-        -- matlab
-        lspconfig["matlab_ls"].setup({})
-    end
-}, -- mason lspconfig
+-- mason lspconfig
 {
     "williamboman/mason-lspconfig.nvim",
     config = function()
