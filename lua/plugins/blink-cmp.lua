@@ -28,7 +28,7 @@ return {{
         cmdline = {
             keymap = {
                 -- 选择并接受预选择的第一个
-                ["<CR>"] = {"select_and_accept", "fallback"}
+                ["<CR>"] = {"accept", "fallback"}
             },
             completion = {
                 -- 不预选第一个项目，选中后自动插入该项目文本
@@ -58,7 +58,7 @@ return {{
             ['<UP>'] = {'select_prev', 'fallback'},
             ['<Down>'] = {'select_next', 'fallback'},
             ['<C-space>'] = {'show', 'show_documentation', 'hide_documentation'},
-            ['<cr>'] = {'select_and_accept', 'fallback'},
+            ['<CR>'] = {'accept', 'fallback'},
             ['<C-j>'] = {'scroll_documentation_up', 'fallback'},
             ['<C-k>'] = {'scroll_documentation_down', 'fallback'}
         },
