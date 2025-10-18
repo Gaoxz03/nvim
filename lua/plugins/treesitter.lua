@@ -6,7 +6,7 @@ return {{
         require("nvim-treesitter.configs").setup({
             ensure_installed = {"c", "cpp", "python", "lua", "vim", "vimdoc", "javascript", "typescript", "html", "css",
                                 "json", "yaml", "toml", "markdown", "bash", "asm", "matlab", "cmake", "make", "vue",
-                                "verilog", "rust"},
+                                "verilog", "rust", "markdown_inline"},
             sync_install = false,
             auto_install = true,
             highlight = {

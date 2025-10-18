@@ -17,13 +17,12 @@ vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
 vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 
--- telescope keymap
-vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<CR>", opt)
-vim.keymap.set("n", "<leader>fg", "<cmd>Telescope live_grep<CR>", opt)
-vim.keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<CR>", opt)
-
--- ctrl + f search
-vim.keymap.set("n", "<C-f>", "<cmd>Telescope current_buffer_fuzzy_find<CR>", opt)
-
+-- Resize file explorer size
+-- Ctrl + Alt + Shift + <- to reduce 
+-- Ctrl + Alt + Shift + -> to expand  
 vim.keymap.set("n", "<C-A-S-Left>", ":NvimTreeResize -10<CR>", opt)
 vim.keymap.set("n", "<C-A-S-Right>", ":NvimTreeResize +10<CR>", opt)
+
+-- Snacks.picker keymap details see ./lua/plugins/snacks.lua
+-- <spcae> + ff to find the file 
+-- <space> + fc to find the content in file
