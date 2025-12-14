@@ -1,9 +1,9 @@
 -- Ctrl + n open file tree
-vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>", opt)
+vim.keymap.set("n", "<C-n>", ":NvimTreeToggle<CR>", {})
 
 -- Ctrl + h, l change file
-vim.keymap.set("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
-vim.keymap.set("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
+vim.keymap.set("n", "<C-h>", ":BufferLineCyclePrev<CR>", {})
+vim.keymap.set("n", "<C-l>", ":BufferLineCycleNext<CR>", {})
 
 -- Ctrl + F4 close tabs
 vim.keymap.set("n", "<C-F4>", ":BufferLinePickClose<CR>", {
@@ -20,8 +20,8 @@ vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 -- Resize file explorer size
 -- Ctrl + Alt + Shift + <- to reduce 
 -- Ctrl + Alt + Shift + -> to expand  
-vim.keymap.set("n", "<C-A-S-Left>", ":NvimTreeResize -10<CR>", opt)
-vim.keymap.set("n", "<C-A-S-Right>", ":NvimTreeResize +10<CR>", opt)
+vim.keymap.set("n", "<C-A-S-Left>", ":NvimTreeResize -10<CR>", {})
+vim.keymap.set("n", "<C-A-S-Right>", ":NvimTreeResize +10<CR>", {})
 
 -- Snacks.picker keymap details see ./lua/plugins/snacks.lua
 -- <spcae> + ff to find the file 
