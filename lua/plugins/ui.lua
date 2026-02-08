@@ -2,11 +2,22 @@ return { -- Theme catppuccin
 {
     "catppuccin/nvim",
     name = "catppuccin",
-    priority = 1000,
+    priority = 1000
 
     -- comment to disable
     -- config = function()
     --     vim.cmd([[colorscheme catppuccin-mocha]])
+    -- end
+}, -- Theme citruszest
+{
+    "zootedb0t/citruszest.nvim",
+    name = "citruszest",
+    lazy = false,
+    priority = 1000,
+
+    -- comment to disable
+    -- config = function()
+    --     vim.cmd([[colorscheme citruszest]])
     -- end
 }, -- Theme moonfly 
 {
