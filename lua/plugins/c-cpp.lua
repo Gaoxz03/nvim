@@ -10,10 +10,24 @@ return { -- clangd format to format c and cpp files
     lazy = false,
     dependencies = { 'nvim-lua/plenary.nvim' },
     config = function()
+        local osys = require("cmake-tools.osys")
         require("cmake-tools").setup({
-            cmake_build_directory = "build",
-            cmake_build_type = "Debug",
-            cmake_generate_options = { "-DCMAKE_EXPORT_COMPILE_COMMANDS=1" }
+            cmake_command = "cmake",
+            ctest_command = "ctest",
+            ctest_show_labels = false, -- also show labels in the test picker
+            cmake_build_preset = true,
+            cmake_build_type = "Debug", -- Default build type as Debug
+            -- EXPORT COMPILE COMMANDS as default
+            cmake_generate_options = { "-DCMAKE_EXPORT_COMPILE_COMMANDS=1" },
+            
+            -- Specific cmake build directory 
+            cmake_build_directory = function()
+                if osys.iswin32 then
+                    return "out\\${variant:buildType}"
+                else
+                    return "out/{variant:buildType}"
+                end
+            end,
         })
     end,
     keys = {
