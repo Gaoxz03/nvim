@@ -9,6 +9,6 @@
 ---@type vim.lsp.Config
 return {
     cmd = {'asm-lsp'},
-    filetypes = {'asm', 'vmasm', "s", "S"},
+    filetypes = {'asm', 'vmasm', "masm", "tiasm"},
     root_markers = {'.asm-lsp.toml', '.git'}
 }

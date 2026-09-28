@@ -1,8 +1,9 @@
 return { -- clangd format to format c and cpp files
 {
     "rhysd/vim-clang-format",
-    conig = function()
-        require("vim-clang-format").setup()
+    init = function()
+        vim.g.clang_format_style = "file"
+        vim.g.clang_format_auto_format = 1
     end
 }, -- cmake build tools to build cmake project in neovim
 {

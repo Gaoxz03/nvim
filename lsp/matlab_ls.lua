@@ -25,7 +25,7 @@ return {
     settings = {
         MATLAB = {
             indexWorkspace = true,
-            installPath = 'C:\\Program Files\\MATLAB\\R2025b\\bin', -- NOTE: Set this to your MATLAB installation path.
+            installPath = 'C:\\Program Files\\MATLAB\\R2026a\\bin', -- NOTE: Set this to your MATLAB installation path.
             matlabConnectionTiming = 'onStart',
             telemetry = true
         }

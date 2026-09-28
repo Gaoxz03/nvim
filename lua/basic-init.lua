@@ -46,5 +46,4 @@ vim.g.loaded_netrwPlugin = 1
 vim.opt.termguicolors = true
 
 -- inline diagnostic enabled
-vim.diagnostic.config({ virtual_lines = true })
-vim.diagnostic.config({ virtual_text = true })
+vim.diagnostic.config({ virtual_text = true, virtual_lines = false, severity_sort = true})
