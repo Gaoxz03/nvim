@@ -2,7 +2,7 @@ return {{
     "folke/which-key.nvim",
     event = "VeryLazy",
     opts = {
-        presets = "classic",
+        preset = "classic",
         delay = 300,
         win = { border = "rounded" },
     },

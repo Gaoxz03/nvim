@@ -4,22 +4,22 @@ return {{
     lazy = false,
     opts = {
         bigfile = {
-            enable = true
+            enabled = true
         },
         quickfile = {
-            enable = true
+            enabled = true
         },
         indent = {
-            enable = true
+            enabled = true
         },
         input = {
-            enable = true
+            enabled = true
         },
         notifier = {
-            enable = false
+            enabled = false
         },
         picker = {
-            enable = true
+            enabled = true
         }
     },
 }}

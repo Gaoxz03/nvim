@@ -37,10 +37,10 @@ return { -- auto-pairs
         require("neogen").setup({
             enabled = true,
             languages = {
-                ['cpp.doxygen'] = require('neogen.configurations.cpp'),
-                ['c.doxygen'] = require('neogen.configurations.c'),
-                ['python.reST'] = require('neogen.configurations.python'),
-                ['rust.rustdoc'] = require('neogen.configurations.rust')
+                cpp = require('neogen.configurations.cpp'),
+                c = require('neogen.configurations.c'),
+                python= { template = { annotation_convention = "reST" }},
+                rust = { template = { annotation_convention = "rustdoc" }}
             }
         })
     end

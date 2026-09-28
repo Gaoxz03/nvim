@@ -45,5 +45,9 @@ vim.g.loaded_netrwPlugin = 1
 -- optionally enable 24-bit colour
 vim.opt.termguicolors = true
 
+vim.o.foldlevel = 99      
+vim.o.foldlevelstart = 99
+vim.o.foldcolumn = "1"    
+
 -- inline diagnostic enabled
 vim.diagnostic.config({ virtual_text = true, virtual_lines = false, severity_sort = true})

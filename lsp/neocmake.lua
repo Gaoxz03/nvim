@@ -20,5 +20,5 @@
 return {
   cmd = { 'neocmakelsp', 'stdio' },
   filetypes = { 'cmake' },
-  root_markers = { '.neocmake.toml', '.git', 'build', 'cmake' , 'CMakePresets.json', 'CTestconfig.cmake', 'CMakeLists.txt'},
+  root_markers = { '.neocmake.toml', '.git', 'build', 'cmake' , 'CMakePresets.json', 'CTestConfig.cmake', 'CMakeLists.txt'},
 }
