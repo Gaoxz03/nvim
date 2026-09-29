@@ -5,7 +5,7 @@ return { -- nvim-lspconfig
     config = function()
         require("mason-lspconfig").setup({
             ensure_installed = {"ts_ls", "lua_ls", "clangd", "asm_lsp", "neocmake", "rust_analyzer", "pyright", "marksman",
-                                "jsonls", "html", "cssls", "yamlls", "taplo", "tinymist", "verible", "matlab_ls", "gopls"}
+                                "jsonls", "html", "cssls", "yamlls", "taplo", "tinymist", "verible", "matlab_ls", "gopls","tree-sitter-cli"}
         })
     end
 }, -- mason which install the lsp
