@@ -14,7 +14,6 @@ return {{
             "markdown", "markdown_inline",
             "bash", "diff", "gitcommit", "dockerfile", "regex",
             "asm",
-            "matlab",
             "rust",
             "go", "gomod", "gotmpl", "gowork",
             "systemverilog",
